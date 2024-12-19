@@ -15,18 +15,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedi
 #This Repo Is By @Silicon_Official 
 # For Any Kind Of Error Ask Us In Support Group @Silicon_Botz 
 
-main_buttons = [[
-        InlineKeyboardButton('❗️ʜᴇʟᴘ', callback_data='help')
-        ],[
-        InlineKeyboardButton('📜 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Infinity_XBotz_support'),
-        InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Infinity_XBotz')
-        ],[
-        InlineKeyboardButton('💳 ᴅᴏɴᴀᴛᴇ', callback_data='donate'),
-        InlineKeyboardButton('😇Bot owner😇', url="https://t.me/Madhuri_niranjan")
-        ],[
-        InlineKeyboardButton('🎬 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/+Qn6fthcb7wI0ZTk1'),
-        InlineKeyboardButton('Movie Cʜᴀɴɴᴇʟ', url='https://t.me/+-qfrHvP10ko1ZDM1')
-        ]]
+main_buttons = []
 #===================Start Function===================#
 
 @Client.on_message(filters.private & filters.command(['start']))
@@ -88,15 +77,7 @@ async def helpcb(bot, query):
     await query.message.edit_text(
         text=Translation.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
-            [[
-            InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❓', callback_data='how_to_use')
-            ],[
-            InlineKeyboardButton('• sᴇᴛᴛɪɴɢs ', callback_data='settings#main'),
-            InlineKeyboardButton('• sᴛᴀᴛᴜs ', callback_data='status')
-            ],[
-            InlineKeyboardButton('• ʙᴀᴄᴋ', callback_data='back'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ', callback_data='about')
-            ]]
+            []
         ))
 
 #Dont Remove My Credit @Silicon_Bot_Update 
